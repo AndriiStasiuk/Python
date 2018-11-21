@@ -8,8 +8,8 @@ plt.rcParams['figure.figsize'] = (10, 5)
 
 def task2(name):
     data = pd.read_csv(name)
-    print(data.head[10])
-    print(data['Agency'].head[10])
+    print(data[:10])
+    print(data['Agency'][:10])
     print(data[['Agency', 'Business Title', 'Work Location 1']])
 
 
